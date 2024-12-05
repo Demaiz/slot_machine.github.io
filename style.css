@@ -1,0 +1,94 @@
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family:'Trebuchet MS';
+    background-image: url("background.jpg");
+    background-size: cover;
+    color: white;
+    text-shadow: -1px -1px black, 1px -1px black, -1px 1px black, 1px 1px black;
+}
+
+#main{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    flex-direction: column;
+}
+
+#cols {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 100%;
+}
+
+#btn{
+    background-color: rgba(14,100,209,255);
+    color: white;
+    height: 46px;
+    width: 143px;
+    border: none;
+    font-size: 21px;
+    border-radius: 12px;
+    margin: 0 9%;
+}
+
+#btn:active {
+    transform: scale(0.995);
+    background-color: rgba(14,87,209,255); 
+}
+
+.col{
+  background-color: black;
+  width: 17%;
+  height: 567px;
+  margin: 6px;
+  border: ridge 5px  gold;
+  overflow: hidden;
+}
+
+img {
+   height: 185px;
+   position: relative;
+  
+}
+
+#user_name{
+  margin: 0px 0px 10px 0px ;
+
+}
+
+.animate1{
+    animation-name: roll1;
+    animation-duration: 2s;  
+    animation-fill-mode: forwards;
+}
+
+  @keyframes roll1 {
+    from {top: 0px;}
+    to {top: -2645px;}
+  }
+
+  .animate2{
+    animation-name: roll2;
+    animation-duration: 2s;  
+    animation-fill-mode: forwards;
+}
+
+  @keyframes roll2 {
+    from {top: -2645px;}
+    to {top: -5480px;}
+  }
+
+  .animate3{
+    animation-name: roll3;
+    animation-duration: 2s;  
+    animation-fill-mode: forwards;
+}
+
+  @keyframes roll3 {
+    from {top: -5480px;}
+    to {top: -9637px;}
+  }
